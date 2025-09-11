@@ -1,0 +1,64 @@
+name: an_intelligent_pos
+description: A new Flutter project
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  http: ^1.5.0
+
+  # Firebase core packages
+  firebase_auth: ^6.0.1
+  cloud_firestore: ^6.0.0
+  firebase_core: ^4.0.0 
+
+  # State Management
+  provider: ^6.1.2
+
+  # Storage for settings
+  shared_preferences: ^2.3.2
+  uuid: ^4.5.1
+
+  # File handling (Excel / PDF export later)
+  path_provider: ^2.1.5
+  excel: ^4.0.6
+  pdf: ^3.8.4
+  # printing: ^5.9.0 
+
+  # UI utilities
+  intl: any
+  image_picker: ^1.1.2
+  barcode: ^2.2.5 
+  logger: ^2.6.1
+  blue_thermal_printer: ^1.2.3
+  flutter_animate: ^4.5.0
+  mobile_scanner: ^6.0.2
+  fl_chart: ^0.68.0
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/icon.png
+    - assets/logo.png
+
+# Localization settings (top-level, NOT under flutter:)
+l10n:
+  arb-dir: lib/l10n
+  template-arb-file: app_en.arb
+  output-localization-file: app_localizations.dart
+  output-class: AppLocalizations
