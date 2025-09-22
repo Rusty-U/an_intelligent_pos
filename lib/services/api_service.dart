@@ -6,8 +6,8 @@ var logger = Logger();
 
 class ApiService {
   // static const String baseUrl = "http://127.0.0.1:8000"; // Localhost for desktop
-  // static final baseUrl = "http://10.0.2.2:8000"; // Android emulator localhost
-  static final baseUrl = "http://192.168.100.41:8000";
+  static final baseUrl = "http://10.0.2.2:8000"; // Android emulator localhost
+  // static final baseUrl = "http://192.168.100.41:8000";
 
   /// Get prediction from FastAPI
   /// [inputData] should include main required fields:
